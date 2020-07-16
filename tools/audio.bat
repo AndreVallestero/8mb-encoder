@@ -7,7 +7,8 @@ REM removing chapters saves a few KB
 REM adjusting sample rate affects quality much more than bitrate
 REM set sample_rate=16k
 REM -ar %sample_rate% ^
-set bitrate_audio=12k
+REM set bitrate_audio=12k
+set bitrate_audio=16k
 
 set base_name=%~n1
 set temp_dir=temp\

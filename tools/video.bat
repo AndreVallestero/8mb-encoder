@@ -10,10 +10,14 @@ REM Set denoise to 0 for live action, 25 or higher for anime / cartoons to reduc
 set denoise=0
 REM Set aq to 2 for anime / cartoons, else 1, use 0 if weird results or quantization errors
 set aq=1
-set bitrate_video=32
-set framerate=12000/1001
-set width=480
-set height=360
+
+REM set width=480
+set width=1280
+REM set height=360
+set height=720
+
+set bitrate_video=434
+set framerate=24000/1001
 
 set base_name=%~n1
 set temp_dir=temp\
@@ -26,6 +30,7 @@ tools\ffmpeg ^
 	-sn ^
 	-map_chapters -1 ^
 	-pix_fmt yuv420p ^
+	-vsync vfr ^
 	-r %framerate% ^
 	-f yuv4mpegpipe ^
 	-| tools\aomenc.exe - ^
@@ -55,6 +60,7 @@ tools\ffmpeg ^
 	-sn ^
 	-map_chapters -1 ^
 	-pix_fmt yuv420p ^
+	-vsync vfr ^
 	-r %framerate% ^
 	-f yuv4mpegpipe ^
 	-| tools\aomenc.exe - ^
