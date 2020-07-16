@@ -1,3 +1,8 @@
 vmaf_scores.xml
-/temp/
+temp
 *.exe
+*.mkv
+*.mp4
+*.opus
+*.webm
+tools/model

@@ -17,5 +17,5 @@ Place all of the following executables in the `tools` directory
 
 ## Notes
 
-- Muxing with MKVToolNix is not necessary results in a smaller webm or mkv than ffmpeg
+- Muxing with MKVToolNix is not necessary but results in a smaller webm or mkv than ffmpeg
 - webm is generally smaller than mkv
