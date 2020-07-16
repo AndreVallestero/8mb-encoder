@@ -1,5 +1,7 @@
 # 8mb-encoder
 
+Batch scripts based on Aomenc, FFMPEG, and MKVToolNix to create the highest quality videos under 8MB
+
 ## Required downloads
 
 Place all of the following executables in the `tools` directory
