@@ -21,6 +21,7 @@ if not exist %temp_dir% mkdir %temp_dir%
 
 echo Encoding video pass 1 from %1 @ ~%bitrate_video%kbps
 tools\ffmpeg ^
+	-v 0 ^
 	-i %1 ^
 	-sn ^
 	-map_chapters -1 ^
@@ -49,6 +50,7 @@ tools\ffmpeg ^
 		--output=NUL
 echo Encoding video pass 2 from %1 @ ~%bitrate_video%kbps
 tools\ffmpeg ^
+	-v 0 ^
 	-i %1 ^
 	-sn ^
 	-map_chapters -1 ^
