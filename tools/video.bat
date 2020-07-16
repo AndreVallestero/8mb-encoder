@@ -10,7 +10,7 @@ REM Set denoise to 0 for live action, 25 or higher for anime / cartoons to reduc
 set denoise=0
 REM Set aq to 2 for anime / cartoons, else 1, use 0 if weird results or quantization errors
 set aq=1
-set bitrate_video=64
+set bitrate_video=32
 set framerate=12000/1001
 set width=480
 set height=360

@@ -16,8 +16,18 @@ Place all of the following executables in the `tools` directory
 - https://ffmpeg.zeranoe.com/builds/
 	- Download Build > bin > ffmpeg.exe
 
+## Usage
+
+There are 3 ways to use the encode.bat
+- Drag your file on encode.bat
+- Run `encode.bat <filename>` in cmd where `<filename>` the name of your video file
+- Name your file `source.mkv` and run encode.bat by double clicking or via cmd
 
 ## Notes
 
 - Muxing with MKVToolNix is not necessary but results in a smaller webm or mkv than ffmpeg
 - webm is generally smaller than mkv
+
+## TODO
+
+- Enable variable framerate
