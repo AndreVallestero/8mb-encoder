@@ -30,4 +30,5 @@ There are 3 ways to use the encode.bat
 
 ## TODO
 
-- Enable variable framerate
+- Add auto settings based on resolution ratio, duration, content type
+	- Use auto settings if second parameter is empty, if second param is "custom" use custom params

@@ -4,7 +4,7 @@ REM Add the following 2 lines before --aq-mode for vmaf
 REM --vmaf-model-path=tools\model\vmaf_v0.6.1.pkl ^
 REM --tune=vmaf ^
 
-REM Set to 5 when testing for max speed, else 0
+REM Set to 6 when testing and debugging for max speed, else 0
 set cpu=0
 REM Set denoise to 0 for live action, 25 or higher for anime / cartoons to reduce artifacts up to 50
 set denoise=0
