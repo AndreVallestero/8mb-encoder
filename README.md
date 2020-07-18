@@ -15,6 +15,7 @@ Place all of the following executables in the `tools` directory
 	
 - https://ffmpeg.zeranoe.com/builds/
 	- Download Build > bin > ffmpeg.exe
+	- Download Build > bin > ffprobe.exe
 
 ## Usage
 
@@ -29,6 +30,5 @@ There are 3 ways to use the encode.bat
 - webm is generally smaller than mkv
 
 ## TODO
-
-- Add auto settings based on resolution ratio, duration, content type
-	- Use auto settings if second parameter is empty, if second param is "custom" use custom params
+- Once merging, if not past limit, keep re-encoding audio with higher bitrate untill larger than 8MB to fill the rest of the space
+	- Increase by 100bps increments
