@@ -8,7 +8,7 @@ set video_bitrate=%~n2
 echo Video bitrate: %video_bitrate%kbps
 
 REM Set to 6 when testing and debugging for max speed, else 0
-set cpu=6
+set cpu=0
 REM Set denoise to 0 for live action, 25 or higher for anime / cartoons to reduce artifacts up to 50
 set denoise=0
 REM Set aq to 2 for anime / cartoons, else 1, use 0 if weird results or quantization errors
