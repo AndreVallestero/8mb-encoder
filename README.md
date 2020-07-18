@@ -2,6 +2,8 @@
 
 Batch scripts based on Aomenc, FFMPEG, and MKVToolNix to create the highest quality videos under 8MB
 
+![image](https://user-images.githubusercontent.com/39736205/87861680-97b66d00-c916-11ea-92d1-0a67f574b00f.png)
+
 ## Required downloads
 
 Place all of the following executables in the `tools` directory
@@ -30,5 +32,5 @@ There are 3 ways to use the encode.bat
 - webm is generally smaller than mkv
 
 ## TODO
-- Once merging, if not past limit, keep re-encoding audio with higher bitrate untill larger than 8MB to fill the rest of the space
+- Once merging, if not past limit, keep re-encoding audio with higher bitrate until larger than 8MB to fill the rest of the space
 	- Increase by 100bps increments
