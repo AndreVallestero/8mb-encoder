@@ -14,7 +14,7 @@ for /f "tokens=* usebackq" %%d in (`"tools\ffprobe -v error -show_entries format
 for /f "tokens=1 delims=." %%d  in ("%duration%") do (set duration=%%d)
 echo Source duration: %duration%s& echo.
 
-if "%~1" == "custom" goto :custom
+if "%~2" == "custom" goto :custom
 
 REM Refine this formula. 20minutes should at least be 14kbps. 30minutes should be 12kbps
 set /a "audio_bitrate=1320000 / %duration% + 10000"
