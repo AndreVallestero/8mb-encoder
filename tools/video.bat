@@ -8,7 +8,9 @@ set video_bitrate=%~n2
 echo Video bitrate: %video_bitrate%kbps
 
 REM Set to 6 when testing and debugging for max speed, else 0
-set cpu=0
+set cpu=6
+REM Set to 1 to enable row multi-threading, else 0
+set row_mt=1
 REM Set denoise to 0 for live action, 25 or higher for anime / cartoons to reduce artifacts up to 50
 set denoise=0
 REM Set aq to 2 for anime / cartoons, else 1, use 0 if weird results or quantization errors
@@ -47,7 +49,7 @@ tools\ffmpeg ^
 		--enable-fwd-kf=1 ^
 		--lag-in-frames=25 ^
 		--cpu-used=%cpu% ^
-		--row-mt=0 ^
+		--row-mt=%row_mt% ^
 		--vmaf-model-path=tools\model\vmaf_v0.6.1.pkl ^
 		--tune=vmaf ^
 		--aq-mode=%aq% ^
