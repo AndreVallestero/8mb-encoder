@@ -14,7 +14,7 @@ set row_mt=1
 REM Set denoise to 0 for live action, 25 or higher for anime / cartoons to reduce artifacts up to 50
 set denoise=0
 REM Set aq to 2 for anime / cartoons, else 1, use 0 if weird results or quantization errors
-set aq=1
+set aq=0
 
 REM set width=480
 set width=1280
