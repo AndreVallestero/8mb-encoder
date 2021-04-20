@@ -50,7 +50,7 @@ tools\ffmpeg ^
 		--lag-in-frames=25 ^
 		--cpu-used=%cpu% ^
 		--row-mt=%row_mt% ^
-		--vmaf-model-path=tools\model\vmaf_v0.6.1.pkl ^
+		--vmaf-model-path=tools\model\vmaf_v0.6.1.json ^
 		--tune=vmaf ^
 		--aq-mode=%aq% ^
 		--denoise-noise-level=%denoise% ^
@@ -79,7 +79,7 @@ tools\ffmpeg ^
 		--lag-in-frames=25 ^
 		--cpu-used=%cpu% ^
 		--row-mt=0 ^
-		--vmaf-model-path=tools\model\vmaf_v0.6.1.pkl ^
+		--vmaf-model-path=tools\model\vmaf_v0.6.1.json ^
 		--tune=vmaf ^
 		--aq-mode=%aq% ^
 		--denoise-noise-level=%denoise% ^
